@@ -1,0 +1,7 @@
+- name: Save build output
+  run: zip -r output.zip .
+- name: Upload artifact
+  uses: actions/upload-artifact@v3
+  with:
+    name: build-output
+    path: output.zip
